@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.news.kikar.biosense.patient_1">
+
+    <LinearLayout
+        android:id="@+id/screenTitle"
+        android:orientation="vertical"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="device configuration"
+            android:gravity="left"
+            android:id="@+id/UserDetailsTitle"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/users_d"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:layout_weight="0.95"
+        android:background="#83ffffff"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/C"
+        android:layout_above="@+id/bSwitchActivity"
+        android:paddingBottom="0dp">
+
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Episode collection:"
+            android:id="@+id/textView"
+            android:paddingBottom="10dp"
+            android:textColor="#002e8a"
+            android:singleLine="false"
+            android:gravity="left" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/togglebutton"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Tachy:"
+            android:id="@+id/sss"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#002e8a"
+            android:singleLine="false"
+            android:gravity="left" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/togglebutton2"
+            android:paddingTop="10dp"
+            android:textOff="bpm"
+            android:textOn="ms"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Brady:"
+            android:id="@+id/sssss"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#002e8a"
+            android:singleLine="false"
+            android:gravity="left" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/togglddebutton2"
+            android:paddingTop="10dp"
+            android:textOff="bpm"
+            android:textOn="ms"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Episode Detection:"
+            android:id="@+id/ss2sss"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#002e8a"
+            android:singleLine="false"
+            android:gravity="left" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggledbutton2"
+            android:paddingTop="10dp"
+            android:textOff="AT"
+            android:textOn="AF"
+            android:checked="false" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/C"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:paddingTop="10dp"
+        android:layout_alignBottom="@+id/screenTitle">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bSwitchActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/users_d"
+        android:layout_alignEnd="@+id/users_d"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false" />
+
+
+</RelativeLayout>
